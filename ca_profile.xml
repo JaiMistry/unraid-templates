@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<CommunityApplications>
+  <Profile>Unraid templates for the apps I maintain. Today that's [AutoThrottle](https://github.com/JaiMistry/autothrottle), which lowers your download client's speed limits while someone is watching on Plex, Jellyfin or Emby, and puts them back when they stop.
+
+Support for each app is on its own GitHub issue tracker, linked from its listing.</Profile>
+  <Icon>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/icon.svg</Icon>
+  <WebPage>https://github.com/JaiMistry/unraid-templates</WebPage>
+</CommunityApplications>

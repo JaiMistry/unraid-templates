@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AutoThrottle</Name>
+  <Repository>jaimistry/autothrottle:latest</Repository>
+  <Registry>https://hub.docker.com/r/jaimistry/autothrottle</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/JaiMistry/autothrottle/issues</Support>
+  <Project>https://github.com/JaiMistry/autothrottle</Project>
+  <ReadMe>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/README.md</ReadMe>
+  <Overview>Lowers qBittorrent or Transmission speed limits while someone is watching on Plex, Jellyfin or Emby, and puts your normal speeds back when they stop, so remote streams don't buffer while downloads run.
+
+It listens to each media server's own live feed, so it reacts within seconds and needs no webhooks, Plex Pass or Tautulli. A paused stream stays throttled, one left paused for 30 minutes is let go, playback on your own network can be ignored, and the right rates are re-applied after a restart. The dashboard shows what's playing, what's throttled, and a heatmap of when your downloads were held back.
+
+After installing, open the WebUI and create your account. Then add your media server and download client on the Configuration page, and map one to the other.</Overview>
+  <Category>Downloaders: MediaServer:Other Tools:</Category>
+  <WebUI>http://[IP]:[PORT:7676]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/templates/autothrottle.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/images/autothrottle.png</Icon>
+  <ExtraSearchTerms>throttle bandwidth speed limit qbittorrent transmission plex jellyfin emby buffering</ExtraSearchTerms>
+  <Requires>A Plex, Jellyfin or Emby server, and qBittorrent or Transmission, reachable from this container.</Requires>
+  <License>GPL-3.0</License>
+  <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/dashboard-dark-light.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/connections-light.png</Screenshot>
+  <Config Name="WebUI" Target="7676" Default="7676" Mode="tcp" Description="Port for the web interface." Type="Port" Display="always" Required="true" Mask="false">7676</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/autothrottle" Mode="rw" Description="Database and encryption key. Keep this folder to keep your settings and history." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/autothrottle</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Description="User that owns the appdata folder." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Description="Group that owns the appdata folder." Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="Username" Target="AUTH_USERNAME" Default="" Description="Optional. Sign-in username from here instead of creating an account in the WebUI. Set together with the password." Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Password" Target="AUTH_PASSWORD" Default="" Description="Optional. Sign-in password, set together with the username." Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="Disable sign-in" Target="AUTH_DISABLED" Default="false|true" Description="Turns off sign-in. Only use this behind a reverse proxy that handles sign-in itself." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+</Container>

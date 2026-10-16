@@ -7,12 +7,8 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/JaiMistry/autothrottle/issues</Support>
   <Project>https://github.com/JaiMistry/autothrottle</Project>
-  <ReadMe>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/README.md</ReadMe>
-  <Overview>Lowers qBittorrent or Transmission speed limits while someone is watching on Plex, Jellyfin or Emby, and puts your normal speeds back when they stop, so remote streams don't buffer while downloads run.
-
-It listens to each media server's own live feed, so it reacts within seconds and needs no webhooks, Plex Pass or Tautulli. A paused stream stays throttled, one left paused for 30 minutes is let go, playback on your own network can be ignored, and the right rates are re-applied after a restart. The dashboard shows what's playing, what's throttled, and a heatmap of when your downloads were held back.
-
-After installing, open the WebUI and create your account. Then add your media server and download client on the Configuration page, and map one to the other.</Overview>
+  <ReadMe>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/readmes/autothrottle.md</ReadMe>
+  <Overview>Dynamically optimize your upload/download speeds while Plex, Jellyfin or Emby is playing in realtime.</Overview>
   <Category>Downloaders: MediaServer:Other Tools:</Category>
   <WebUI>http://[IP]:[PORT:7676]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/templates/autothrottle.xml</TemplateURL>
@@ -22,6 +18,7 @@ After installing, open the WebUI and create your account. Then add your media se
   <License>GPL-3.0</License>
   <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/dashboard-dark-light.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/connections-light.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/login-dark.png</Screenshot>
   <Config Name="WebUI" Target="7676" Default="7676" Mode="tcp" Description="Port for the web interface." Type="Port" Display="always" Required="true" Mask="false">7676</Config>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/autothrottle" Mode="rw" Description="Database and encryption key. Keep this folder to keep your settings and history." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/autothrottle</Config>
   <Config Name="PUID" Target="PUID" Default="99" Description="User that owns the appdata folder." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>

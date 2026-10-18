@@ -43,7 +43,7 @@ AutoThrottle dynamically lowers your download client speeds while something is p
 |:-:|---|---|
 | <a href="https://www.qbittorrent.org"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/qbittorrent.svg" width="18" height="18" alt="qBittorrent"></a> | qBittorrent | 5.2+ |
 | <a href="https://transmissionbt.com"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/transmission.svg" width="18" height="18" alt="Transmission"></a> | Transmission | 4.1+ |
-| <a href="https://deluge-torrent.org"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/deluge.svg" width="18" height="18" alt="Deluge"></a> | Deluge | 2.1+ |
+| <a href="https://deluge-torrent.org"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/deluge.svg" width="18" height="18" alt="Deluge"></a> | Deluge (coming soon) | 2.1+ |
 
 ## ⚙️ Environment variables
 

@@ -21,15 +21,17 @@ AutoThrottle dynamically lowers your download client speeds while something is p
 
 ## ⭐ Features
 
-- **Live dashboard:** a reactive modern UI.
-- **Real-time:** detects within seconds, from each server's live feed.
-- **Mappings:** control which applications are throttled.
-- **Pause-aware:** a paused stream stays throttled, and an abandoned one is released.
-- **Local playback exemption:** streams on your own network can be ignored.
-- **Restart-safe:** rates are re-applied on startup, so nothing stays stuck slow.
-- **Throttle history:** a heatmap of when your downloads were held back.
-- **Secure:** all credentials securely encrypted.
-- **Lightweight:** very small footprint.
+- **Live dashboard:** A modern reactive UI with live updates as they occur.
+- **Near-real-time detection:** Listens to each server's live feed.
+- **Autoplay-aware:** Back-to-back episodes being played will hold throttling, preventing unnecessary rate changes.
+- **Pause-aware:** A paused stream stays throttled until a 30-minute timeout.
+- **Local playback exemption:** Streams on your own network can be ignored, so only remote connections count.
+- **Mappings:** Control which media servers throttle which download clients.
+- **Restart/crash-safe:** Rates are reapplied on startup, so nothing stays stuck slow.
+- **Throttle history:** A 7- and 30-day heatmap of when your downloads were held back.
+- **Secure:** All sensitive credentials are securely encrypted and never leaked.
+- **Lightweight:** A single distroless image with a minimal footprint.
+- **Runs anywhere:** Docker on amd64 and arm64, Unraid Community Apps, and as a native Windows service.
 
 ## 🧩 Supported versions
 

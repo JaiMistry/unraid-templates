@@ -4,7 +4,7 @@ Unraid Community Applications templates for the apps I maintain.
 
 | App | What it does | Template |
 |---|---|---|
-| [AutoThrottle](https://github.com/JaiMistry/autothrottle) | Lowers qBittorrent or Transmission speed limits while someone is watching on Plex, Jellyfin or Emby, and puts them back when they stop. | [autothrottle.xml](templates/autothrottle.xml) |
+| [AutoThrottle](https://github.com/JaiMistry/autothrottle) | Intelligently throttles download clients while a media server has active playback. | [autothrottle.xml](templates/autothrottle.xml) |
 
 ## Installing
 

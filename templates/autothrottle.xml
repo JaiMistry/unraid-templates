@@ -13,8 +13,8 @@
   <WebUI>http://[IP]:[PORT:7676]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/templates/autothrottle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/images/autothrottle.png</Icon>
-  <ExtraSearchTerms>throttle bandwidth speed limit qbittorrent transmission plex jellyfin emby buffering</ExtraSearchTerms>
-  <Requires>A Plex, Jellyfin or Emby server, and qBittorrent or Transmission, reachable from this container.</Requires>
+  <ExtraSearchTerms>throttle bandwidth speed limit qbittorrent transmission deluge plex jellyfin emby buffering</ExtraSearchTerms>
+  <Requires>A Plex, Jellyfin or Emby server, and qBittorrent, Transmission or Deluge, reachable from this container.</Requires>
   <License>GPL-3.0</License>
   <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/dashboard-dark-light.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/connections-light.png</Screenshot>

@@ -63,33 +63,6 @@ If a download client can't be reached, AutoThrottle keeps retrying, sooner at fi
 
 Disable throttling puts every client back to its default rates straight away and keeps them there, even across restarts, until you resume. On Windows, Exit in the tray icon also restores default rates before AutoThrottle stops.
 
-## 🧩 Supported versions
-
-| | Media server | Version |
-|:-:|---|---|
-| <a href="https://www.plex.tv"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/plex.svg" width="18" height="18" alt="Plex Media Server"></a> | Plex Media Server | 1.43+ |
-| <a href="https://jellyfin.org"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/jellyfin.svg" width="18" height="18" alt="Jellyfin"></a> | Jellyfin | 10.11+ |
-| <a href="https://emby.media"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/emby.svg" width="18" height="18" alt="Emby"></a> | Emby | 4.9+ |
-
-| | Download client | Version |
-|:-:|---|---|
-| <a href="https://www.qbittorrent.org"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/qbittorrent.svg" width="18" height="18" alt="qBittorrent"></a> | qBittorrent | 5.2+ |
-| <a href="https://transmissionbt.com"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/transmission.svg" width="18" height="18" alt="Transmission"></a> | Transmission | 4.1+ |
-| <a href="https://deluge-torrent.org"><img src="https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/logos/deluge.svg" width="18" height="18" alt="Deluge"></a> | Deluge | 2.1+ |
-
-## ⚙️ Environment variables
-
-All are optional.
-
-| Variable | Default | What it does |
-|---|---|---|
-| `TZ` | Unraid's time zone | Time zone for timestamps. |
-| `PUID` | `99` | User that owns the data folder. |
-| `PGID` | `100` | Group that owns the data folder. |
-| `AUTH_USERNAME` | | Sign-in username from the environment instead of creating an account. Set with `AUTH_PASSWORD`. |
-| `AUTH_PASSWORD` | | Sign-in password from the environment. Set with `AUTH_USERNAME`. |
-| `AUTH_DISABLED` | `false` | Turns off sign-in. Only use this behind a proxy that handles it. |
-
 ## 🛠️ First-time setup
 
 Open `http://<your-server>:7676` and create your account. Everything else

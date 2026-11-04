@@ -14,7 +14,17 @@
   <TemplateURL>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/templates/autothrottle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/JaiMistry/unraid-templates/main/images/autothrottle.png</Icon>
   <ExtraSearchTerms>throttle bandwidth speed limit qbittorrent transmission deluge plex jellyfin emby buffering</ExtraSearchTerms>
-  <Requires>A Plex (1.43+), Jellyfin (10.11+) or Emby (4.9+) server, and qBittorrent (5.2+), Transmission (4.1+) or Deluge (2.1+), reachable from this container.</Requires>
+  <Requires>At least one media server and one download client, reachable from this container.
+
+Media servers:
+Plex Media Server 1.43+
+Jellyfin 10.11+
+Emby 4.9+
+
+Download clients:
+qBittorrent 5.2+
+Transmission 4.1+
+Deluge 2.1+</Requires>
   <License>GPL-3.0</License>
   <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/dashboard-dark-light.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/JaiMistry/autothrottle/main/.github/assets/screenshots/connections-light.png</Screenshot>
